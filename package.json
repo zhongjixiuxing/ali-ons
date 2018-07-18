@@ -1,7 +1,7 @@
 {
-  "name": "ali-ons",
+  "name": "ax-rocketmq",
   "version": "3.0.0",
-  "description": "Aliyun Open Notification Service Client",
+  "description": "Fork Aliyun Open Notification Service Client",
   "main": "./lib/index.js",
   "files": [
     "lib"
@@ -18,46 +18,49 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ali-sdk/ali-ons.git"
+    "url": "git+https://github.com/zhongjixiuxing/ali-ons"
   },
   "keywords": [
     "ons",
-    "aliyun",
+    "anxing",
+    "ax",
+    "rocketmq",
+    "mq",
     "ali-sdk"
   ],
-  "author": "gxcsoccer <gxcsoccer@126.com>",
+  "author": "anxing <anxing131@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ali-sdk/ali-ons/issues"
+    "url": "https://github.com/zhongjixiuxing/ali-ons"
   },
-  "homepage": "https://github.com/ali-sdk/ali-ons#readme",
+  "homepage": "https://github.com/zhongjixiuxing/ali-ons#readme",
   "dependencies": {
-    "JSON2": "^0.1.0",
-    "address": "^1.0.3",
-    "binary-search-insert": "^1.0.3",
-    "byte": "^1.4.0",
-    "bytes": "^3.0.0",
-    "chalk": "^2.3.2",
-    "debug": "^3.1.0",
-    "egg-logger": "^1.6.1",
-    "is-type-of": "^1.2.0",
-    "long": "^4.0.0",
-    "mkdirp": "^0.5.1",
-    "mz-modules": "^2.1.0",
-    "osenv": "^0.1.5",
-    "p-gather": "^1.0.1",
-    "sdk-base": "^3.4.0",
-    "tcp-base": "^3.1.0",
-    "utility": "^1.13.1"
+    "JSON2": "0.1.0",
+    "address": "1.0.3",
+    "binary-search-insert": "1.0.3",
+    "byte": "1.4.0",
+    "bytes": "3.0.0",
+    "chalk": "2.3.2",
+    "debug": "3.1.0",
+    "egg-logger": "1.6.1",
+    "is-type-of": "1.2.0",
+    "long": "4.0.0",
+    "mkdirp": "0.5.1",
+    "mz-modules": "2.1.0",
+    "osenv": "0.1.5",
+    "p-gather": "1.0.1",
+    "sdk-base": "3.4.0",
+    "tcp-base": "3.1.0",
+    "utility": "1.13.1"
   },
   "devDependencies": {
-    "autod": "^3.0.1",
-    "contributors": "^0.5.1",
-    "egg-bin": "^4.4.1",
-    "eslint": "^4.19.1",
-    "eslint-config-egg": "^7.0.0",
-    "mm": "^2.2.0",
-    "urllib": "^2.27.0"
+    "autod": "3.0.1",
+    "contributors": "0.5.1",
+    "egg-bin": "4.4.1",
+    "eslint": "4.19.1",
+    "eslint-config-egg": "7.0.0",
+    "mm": "2.2.0",
+    "urllib": "2.27.0"
   },
   "engines": {
     "node": ">= 8.0.0"

@@ -1,4 +1,4 @@
-ali-ons
+RocketMQ-Nodejs-client
 =======
 
 [![NPM version][npm-image]][npm-url]
@@ -15,7 +15,7 @@ ali-ons
 [node-image]: https://img.shields.io/badge/node.js-%3E=_4.2.3-green.svg?style=flat-square
 [node-url]: http://nodejs.org/download/
 
-Aliyun Open Notification Service Client (base on opensource project [RocketMQ](https://github.com/alibaba/RocketMQ/tree/master/rocketmq-client))
+RocketMq Open Notification Service Client (base on opensource project [RocketMQ](https://github.com/ali-sdk/ali-ons))
 
 Sub module of [ali-sdk](https://github.com/ali-sdk/ali-sdk).
 
@@ -33,12 +33,11 @@ consumer
 'use strict';
 
 const httpclient = require('urllib');
-const Consumer = require('ali-ons').Consumer;
+const Consumer = require('ax-rocketmq').Consumer;
 const consumer = new Consumer({
   httpclient,
-  accessKey: 'your-accesskey',
-  secretKey: 'your-secretkey',
   consumerGroup: 'your-consumer-group',
+  namesrvAddr: 'your-namesrv-address'
   // isBroadcast: true,
 });
 
@@ -60,9 +59,8 @@ const Message = require('ali-ons').Message;
 
 const producer = new Producer({
   httpclient,
-  accessKey: 'your-accesskey',
-  secretKey: 'your-secretkey',
   producerGroup: 'your-producer-group',
+  namesrvAddr: 'your-namesrv-address'
 });
 
 producer.ready(() => {
