@@ -22,7 +22,7 @@ Sub module of [ali-sdk](https://github.com/ali-sdk/ali-sdk).
 ## Install
 
 ```bash
-npm install ali-ons --save
+npm install ax-rocketmq --save
 ```
 
 ## Usage
@@ -54,8 +54,8 @@ producer
 'use strict';
 
 const httpclient = require('urllib');
-const Producer = require('ali-ons').Producer;
-const Message = require('ali-ons').Message;
+const Producer = require('ax-rocketmq').Producer;
+const Message = require('ax-rocketmq').Message;
 
 const producer = new Producer({
   httpclient,
